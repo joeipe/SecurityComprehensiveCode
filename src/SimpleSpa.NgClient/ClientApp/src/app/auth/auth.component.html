@@ -1,0 +1,15 @@
+<h1 id="tableLabel">Auth Details</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!token"><em>Loading...</em></p>
+
+<ul class="list-group">
+    <li class="list-group-item">{{ token?.idToken }}</li>
+    <li class="list-group-item">{{ token?.accessToken }}</li>
+    <li class="list-group-item">{{ token?.refreshToken }}</li>
+    <li class="list-group-item">{{ token?.firstName }}</li>
+    <li class="list-group-item">{{ token?.lastName }}</li>
+    <li class="list-group-item">{{ token?.address }}</li>
+    <li class="list-group-item">{{ token?.roles }}</li>
+  </ul>

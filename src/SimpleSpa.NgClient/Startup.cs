@@ -97,8 +97,8 @@ namespace SimpleSpa.NgClient
                     options.Scope.Add("profile");
                     options.Scope.Add("address");
                     options.Scope.Add("roles");
-                    options.Scope.Add("simpleaapi");
-                    options.Scope.Add("simplebapi");
+                    options.Scope.Add("simpleaapi.fullaccess");
+                    options.Scope.Add("simplebapi.fullaccess");
                     options.Scope.Add("offline_access"); //refresh token related
                     options.SaveTokens = true;
                     options.GetClaimsFromUserInfoEndpoint = true;

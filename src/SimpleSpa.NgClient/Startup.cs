@@ -90,7 +90,7 @@ namespace SimpleSpa.NgClient
                     options.ClientId = "simplespaclient";
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";
-                    options.UsePkce = true;
+                    //options.UsePkce = true;
                     //options.CallbackPath = new PathString("...")
                     //options.SignedOutCallbackPath = new PathString("...")
                     options.Scope.Add("openid");

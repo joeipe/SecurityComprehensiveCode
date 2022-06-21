@@ -54,6 +54,7 @@ namespace OneAndOnly.IDP
                     ClientId = "simplespaclient",
                     ClientSecrets = { new Secret("secret".Sha256()) },
                     AllowedGrantTypes = GrantTypes.Code,
+                    RequirePkce = true,
                     RedirectUris = new List<string>() { "https://localhost:44302/signin-oidc" },
                     PostLogoutRedirectUris = new List<string>() { "https://localhost:44302/signout-callback-oidc" },
                     AllowedScopes =
